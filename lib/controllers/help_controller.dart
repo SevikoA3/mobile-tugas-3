@@ -1,3 +1,10 @@
+import 'package:shared_preferences/shared_preferences.dart';
+
 class HelpController {
-  // Any logic for help can go here
+  Future<void> deleteSession() {
+    return SharedPreferences.getInstance().then((prefs) {
+      prefs.remove('isLoggedIn');
+      prefs.remove('userId');
+    });
+  }
 }

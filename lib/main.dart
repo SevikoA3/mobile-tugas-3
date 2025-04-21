@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:mobile_task3/views/jenis_bilangan_view.dart';
 import 'views/login_view.dart';
 import 'views/home_view.dart';
 import 'views/members_view.dart';
@@ -28,6 +29,7 @@ class MyApp extends StatelessWidget {
         '/converter': (_) => TimeConverterView(),
         '/tracker': (_) => TrackerView(),
         '/recommended': (_) => RecommendedView(),
+        '/bilangan': (_) => JenisBilanganView(),
       },
     );
   }
